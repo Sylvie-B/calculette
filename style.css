@@ -14,11 +14,10 @@ body {
 }
 
 #container{
-    width: 40vw;
-    margin: auto;
+    width: 42%;
+    margin: 2vh auto 0 auto;
     background-color: #e1f0fc;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 1.5vh;
 }
 
 #screen, #container{
@@ -27,33 +26,48 @@ body {
 }
 
 #screen, #key{
-    width: 38vw;
+    width: 95%;
 }
 
 #screen{
-    height: 6vh;
     margin: auto;
     background-color: lightblue;
+    text-align: right;
+    padding-right: 1vw;
 }
 
-#screen, #key div{
-    font-size: 4vw;
-    padding-top: 0.5vh;
+#screen, #key button{
+    height: 7vh;
+    font-size: 3vw;
+    padding-top: 0.25vh;
 }
 
 #key{
-    margin: auto;
+    margin: 0 auto 1vh auto;
     padding-top: 1vh;
-    height: 40vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#key div{
-    width: 8vw;
-    height: 6vh;
+#key button{
+    width: 23%;
+    margin: 2px;
     background-color: darkcyan;
     text-align: center;
 }
 
+#ouvPar, #fermPar, #dot{
+    color: darkcyan;
+}
+
+@media screen and (max-width: 600px){
+    #container{
+        width: 100%;
+        margin: 0;
+    }
+    #screen, #key button{
+        font-size: 300%;
+        height: 10vh;
+    }
+}
